@@ -15,11 +15,11 @@ body {
 
 	background-size: 1000%;
 	-moz-background-size: 1000%;
-	-webkit-background-size: 1000%;	
+	-webkit-background-size: 1000%;
 
 	/* W3C */
 	animation-name: fun-time-awesome;
-	animation-duration: 40s;
+	animation-duration: 35s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;

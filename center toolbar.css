@@ -1,0 +1,52 @@
+.submenu {
+    background-color: #353535;
+    overflow: hidden;
+    position: relative;
+}
+.submenu-img {
+    float: left;
+    position: inherit;
+    padding: 30px 0 30px 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.submenu-img .icon-home {
+    background-image: url(http://imageshack.com/a/img607/9549/j3oe.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    height: 56px;
+    width: 41px;
+    margin: 0 55px 0 0;
+    float:left;
+}
+.submenu-img .icon-groups {
+    background-image: url(http://imageshack.com/a/img191/1220/9sb7.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    height: 54px;
+    width: 49px;
+    margin: 0 55px 0 0;
+    float: left;
+}
+.submenu-img .icon-members {
+    background-image: url(http://imageshack.com/a/img62/4964/6spa.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    height: 54px;
+    width: 64px;
+    margin: 0 55px 0 0;
+    float: left;
+}
+.submenu-img .icon-favorite {
+    background-image: url(http://img838.imageshack.us/img838/7659/ojv5.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    height: 58px;
+    width: 78px;
+    margin: 0 55px 0 0;
+    float: left;
+}
