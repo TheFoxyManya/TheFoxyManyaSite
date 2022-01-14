@@ -4,13 +4,14 @@
 	<link rel="stylesheet" href="toolbar.css">
 	<link rel="stylesheet" href="tight style.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="clumn.css">
+	<link rel="stylesheet" href="newtoolbar.css">
 	<link rel="shortcut icon" href="icon.ico">
+
 <title>Home</title>
 
 </head>
 <style>
-
+.center {text-align: center;}
 img {
     pointer-events: none;
 }
@@ -34,7 +35,7 @@ img {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #eb8100;
 }
 
 #myBtn {
@@ -70,7 +71,7 @@ img {
   margin-right: auto;
 }
 
-.white1 {
+.orange {
   max-width: center;
   margin: 5 5 5 5;
   background: #FFA200;
@@ -84,36 +85,108 @@ img {
   filter: blur(25px);
 }
 
+ion-icon {
+  font-size: 70px;
+		color: #FFFFFF
+	}
+
+	/* no image duplicate on pc mode */
+@media screen and (min-width: 701px) {
+	.show{
+			 display:none;
+
+					}
+	}
+	/* remove all the border and image on phone mode*/
+@media screen and (max-width: 700.000px) {
+
+				.remove {
+						display:none;
+				}
+}
+@media screen and (max-width: 700.000px) {
+.phonescreen {
+width: 100%;
+height: auto;
+margin: 0
+}
+.orangeforphone{
+	margin: auto;
+	background: #FFA200;
+	padding: 10px;
+}
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (min-width: 700.000px) {
+
+				.remove1 {
+						display:none;
+				}
+}
+@media print {
+  html, body {
+    display: none;  /* hide whole page */
+  }
+}
+
+
 </style>
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-<div class="container"><div class="banner"> <!--center image-->
-  <img src="photo1.jpg" alt="center-image" width="53.5%">
+
+
+<span class="instagram"><a href="https://www.instagram.com/thefoxymanya/" target="_blank"><ion-icon name="logo-instagram"></a></ion-icon></span> <!--insta-->
+
+
+<div class="remove1">
+<ul  class="phonescreen"> <!--link-->
+  <li style="float:left"><a class="active" href="index.html">Home</a></li>
+  <li style="float:left"><a href="fun.html">Art</a></li>
+  <li style="float:left"><a href="contact.html" class="remove">Contact Me</a></li>
+</ul>
+</div>
+<div class="container" class="phonescreen"><div class="banner"> <!--center image-->
+  <img src="photo1.jpg" alt="center-image" width="53.5%" class="phonescreen">
   <div class="centered" style="background-color:black;font-size:39px; color:#FFC300;"><j1>TheFoxyManya</j1></div>
   </div>
 
-<ul> <!--link-->
+<ul class="remove"> <!--link-->
   <li style="float:left"><a class="active" href="index.html">Home</a></li>
   <li style="float:left"><a href="fun.html">Art</a></li>
-  <li style="float:left"><a href="contact.html">Contact Me</a></li>
+  <li style="float:left"><a href="contact.html" class="remove">Contact Me</a></li>
 </ul>
-
-<div class="white1"> <!--background white with image-->
-  <img src="steam logo.png" class="center" width="100%">
-</div>
-
-<br>
-
-<div class="white1"><!--contect-->
-	<p class="center">New art!! Go see it!🦊</p>
 </div>
 
 
-<!--another photo-->
-<div class="white1">
-			<img src="panda full color.png" class="img2" class="center" class="img2" width="65%">
+<div class="remove">
+<a style="font-size:10px"><P class="orange" style="color:white">Hello Foxes there is a huge update to the site <br>the site is friendly for the phone uses <br> there will be more paint, do not worry.</P></a>
 </div>
+
+<div class="show">
+	<div class="orangeforphone" style="color:white">
+<P class="orange" style="font-size:25px" >Hello Foxes there is a huge update to the site <br>the site is friendly for the phone uses <br> there will be more paint, do not worry.</P>
+</div></div>
+
+
+<div class="remove">
+<div class="orange"><!--contect-->
+	<p class="center">New <a href="fun.html"  style="color:grey; text-decoration:none" >art!!</a> Go see it!🦊</p>
+<div>
+				<!--another photo-->
+<img src="narutoandsasuka.jpeg" class="img2" class="center" class="img2" width="70%">
+</div></div></div>
+
+<div class="show">
+	<div class="orangeforphone">
+<p class="center" style="font-size:50px">New <a href="fun.html" style="color:grey; text-decoration:none">art!!</a> Go see it!🦊</p></p>
+				<!--another photo-->
+<img src="narutoandsasuka.jpeg" class="img2" class="center" class="img2" width="70%">
+</div></div>
 </body>
 </html>

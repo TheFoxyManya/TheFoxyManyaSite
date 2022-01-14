@@ -1,0 +1,58 @@
+.right {
+    text-align right;
+    float right;
+}
+
+#ovoMenu {
+    margin 0px;
+    padding 0px;
+     Size properties 
+    padding-top 5px;
+     Font properties 
+    color #FFFFFF;
+    font-size 80%;
+     Create a gradient 
+    background-color #418CE5;
+    filter progidDXImageTransform.Microsoft.gradient(startColorstr='#418CE5', endColorstr='#256EC6');
+    background -webkit-gradient(linear, left top, left bottom, from(#418CE5), to(#256EC6));
+    background -moz-linear-gradient(top, #418CE5, #256EC6);
+     Links are not allowed on another line 
+    white-space nowrap;
+}
+
+#ovoMenu alink, #ovoMenu avisited, #ovoMenu aactive, #ovoMenu ahover {
+    color #FFFFFF;
+     Corners 
+    -moz-border-radius-topleft 4px;
+    border-top-left-radius 4px;
+    -moz-border-radius-topright 4px;
+    border-top-right-radius 4px;
+     Size 
+    margin-left 12px;
+    padding-left 12px;
+    padding-right 12px;
+     Display it as a block 
+    display inline-block;
+     Height of the link 
+    height 30px;
+    line-height 30px;
+     No underline 
+    text-decoration none;
+     No outline 
+    outline 0;
+}
+
+#ovoMenu ahover {
+     Other background 
+    background-color #13529E;
+    filter progidDXImageTransform.Microsoft.gradient(startColorstr='#13529E', endColorstr='#084084');
+    background -webkit-gradient(linear, left top, left bottom, from(#13529E), to(#084084));
+    background -moz-linear-gradient(top, #13529E, #084084);
+}
+
+#ovoMenu a.activelink, #ovoMenu a.activevisited, #ovoMenu a.activeactive, #ovoMenu a.activehover {
+    color #333333;
+    font-weight bold;
+    background none;
+    background-color #E9E9E9;
+}

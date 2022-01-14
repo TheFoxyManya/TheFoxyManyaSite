@@ -1,93 +1,99 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
 <head>
+	<link rel="stylesheet" href="newtoolbar.css">
 	<link rel="stylesheet" href="toolbar.css">
 	<link rel="stylesheet" href="tight style.css">
+	<link rel="stylesheet" href="circal.css">
+		<link rel="stylesheet" href="topbutton.css">
 	<link rel="shortcut icon" href="icon.ico">
 
 	<title>art</title>
+	<style>
 
+
+	/* no image duplicate on pc mode */
+	@media screen and (min-width: 701px) {
+		.show{
+				 display:none;
+
+		        }
+		}
+		/* remove all the border and image on phone mode*/
+@media screen and (max-width: 700.000px) {
+
+	        .remove {
+	            display:none;
+	        }
+	}
+@media screen and (max-width: 700.000px) {
+.phonescreen {
+	  max-width: center;
+	width: 100%;
+  height: auto;
+	margin: 0
+	}
+.orangeforphone{
+		margin: auto;
+	  background: #FFA200;
+	  padding: 10px;
+	}
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+}
+
+	ion-icon {
+	  font-size: 70px;
+			color: #FFFFFF
+	}
+	@media print {
+	  html, body {
+	    display: none;  /* hide whole page */
+	  }
+	}
+</style>
 </head>
-<style>
-
-img {
-    pointer-events: none;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #FFA200;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #FFA200;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #FFA200;
-}
-.white1 {
-  max-width: center;
-  margin: auto;
-  background: #FFA200;
-  padding: 10px;
-  margin-left: 23.3%;
-  margin-right: 23.3%;
-}
-body {
-  background-image: url('fox background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-
-</style
+<script src="java spiner.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body>
 <body>
 
-	<ul> <!--link-->
-	  <li style="float:left"><a href="index.html">Home</a></li>
-	  <li style="float:left"><a  class="active" href="fun.html">Art</a></li>
-	  <li style="float:left"><a href="contact.html">Contact Me</a></li>
-	</ul>
 
-</body>
+<div class="spinner-container">
+	<div class="circles">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<ul  class="phonescreen"> <!--link-->
+	<li style="float:left"><a href="index.html">Home</a></li>
+	<li style="float:left"><a class="active" href="fun.html">Art</a></li>
+	<li style="float:left"><a href="contact.html" class="remove">Contact Me</a></li>
+</ul>
 
-<div class="white1">
 
-<p style="color:red;"><p1 style="font-size:100px;">New</p></p1>
+<span class="instagram"><a href="https://www.instagram.com/thefoxymanya/" target="_blank"><ion-icon name="logo-instagram"></a></ion-icon>
+</span>
 
-	<img src="panda full color.png" width="100%" class="center"> <!--image-->
+<div class="remove">
+<div class="orange2">
+
+	<p style="color:#6f00b3;"><p1 style="font-size:500%;">New</p></p1>
+
+
+	<img src="narutoandsasuka.jpeg" width="100%" class="center"> <!--image-->
 	<img src="" width="100%" class="center"> <!--space-->
 	<img src="color boy.png" width="100%" class="center"> <!--image-->
 	<img src="" width="100%" class="center"> <!--space-->
@@ -105,12 +111,27 @@ body {
 	<img src="" width="100%" class="center">
 	<img src="4.jpg" width="100%" class="center">
 	<img src="" width="100%" class="center">
-</div>
+</div></div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="show">
+	<div class="orangeforphone">
+	<p style="color:#6f00b3;"><p1 style="font-size:500%;">New</p></p1>
+	<img src="narutoandsasuka.jpeg" width="100%"> <!--image-->
+	<img src="color boy.png" width="100%"> <!--image-->
+	<img src="buko no hero.jpg" width="100%">
+  <img src="panda.jpg" width="100%">
+	<img src="zelda link finish.jpg" width="100%">
+	<img src="1.jpg" width="100%">
+	<img src="2.jpg" width="100%">
+	<img src="3.jpg" width="100%">
+	<img src="4.jpg" width="100%">
+</div></div>
+
+</body>
 <script>
-
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -128,6 +149,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-<body>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</body
+<script src="tilt.js"></script>
+
+</script>
+</html>

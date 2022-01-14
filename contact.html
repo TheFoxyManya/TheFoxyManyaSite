@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="toolbar-full.css">
+	<link rel="stylesheet" href="toolbarfull.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="Tight style.css">
 	<link rel="stylesheet" href="Colorful background.css">
@@ -48,12 +48,24 @@ input[type=submit]:hover {
 }
 {
 	width: 49%;
-	float: left;
 	margin-left: 2%;
 }
-.row {width: 40.5%; /* This div spans five columns */
+.screen {
+	width: 40.5%;
 	margin-left: 2%;
-	float:left;
+}
+@media screen and (max-width: 700px) {
+.phonescreen {
+	width: 100%;
+  height: auto;
+	margin: 0
+	}
+}
+
+@media print {
+  html, body {
+    display: none;  /* hide whole page */
+  }
 }
 </style>
 
@@ -68,8 +80,7 @@ input[type=submit]:hover {
   <li style="float:left"><a class="active" href="contact.html">Contact Me</a></li>
 </ul>
 
-<div class="row">
-<div class="six">
+<div class="screen">
 	<div class="container" style="color:white">
 		<form action="https://formspree.io/f/mknpyrlp" method="POST">
 			<label for="Firsname">full name</label>
@@ -83,7 +94,7 @@ input[type=submit]:hover {
 
     <input type="submit" value="Send">
   </form>
-</div></div></div>
+</div></div>
 
 </body>
 </html>
